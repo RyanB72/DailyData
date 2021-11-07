@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="logic.js"></script>
+<script src="./dailyData.json"></script>
+<style type="text/css">
+    .button {
+      background-color: white; /* black */
+      border: none;
+      color: #555555;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 900;
+      display: inline-block;
+      font-size: 25px;
+      width: 500px;
+      height: 250px;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+    .div {
+      padding-bottom: 50px;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 100px;
+      display: inline-block;
+      text-align: center;
+      color: white;
+      margin-bottom: 0px;
+      margin-top: 25px;
+    }
+</style>
+<body style="background-color: black;"> 
+
+  <div class="div" style="text-align: center; padding-bottom: 0px;">
+    <p id="d" class="title">date</p>
+  </div>
+
+    <div class="div">
+      <p id="push" class="title" style="width: 49%;">PushUps X</p>
+      <p id="pull" class="title" style="width: 50%; float: right;">PullUps X</p>
+    </div>
+
+    <div class="div" style="text-align: center;">
+      <button class="button" onclick="addPushUp(10)" type="button">PushUp + 10</button>
+      <button class="button" onclick="addPushUp(15)" type="button">PushUp + 15</button>
+      <button class="button" onclick="addPushUp(20)" type="button">PushUp + 20</button>
+    </div>
+
+    <div class="div" style="text-align: center;">
+      <button class="button" onclick="addPullUp(10)" type="button">PullUp + 10</button>
+      <button class="button" onclick="addPullUp(15)" type="button">PullUp + 15</button>
+      <button class="button" onclick="addPullUp(20)" type="button">PullUp + 20</button>
+    </div>
+</body>
